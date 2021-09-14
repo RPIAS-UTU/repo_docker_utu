@@ -10,6 +10,9 @@ FROM php:${php_version}
 RUN apt-get update && \
     apt-get install vim git -y
 
+RUN git clone https://rpias:1wqwlnxyX4DWx0aFSX8NwD@github.com/rpias/repo_php_utu.git /var/www/html
+
+
 # ejecuta en el contenedor el comando necesario para instalar las librerias 
 # necesarias para utilizar mysql
 RUN docker-php-ext-install mysqli pdo pdo_mysql 
