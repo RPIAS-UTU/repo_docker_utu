@@ -15,7 +15,7 @@ services:
       MYSQL_PASSWORD: ${MYSQL_PASSWORD} # contraseña de mysql
       MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD} # contraseña de mysql
     ports: # puertos que se abren en el contenedor
-      - "3306:3306" # puerto de mysql
+      - "${MYSQL_PORT}:3306" # puerto de mysql
     restart: always # establece si se reinicia el contenedor al cambiar de estado
 
   php: # nombre del servicio
