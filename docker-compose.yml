@@ -1,5 +1,4 @@
 version: '3'
-# https://ualmtorres.github.io/SeminarioDockerPresentacion/
 services:
   mysql: # nombre del servicio
     build:
