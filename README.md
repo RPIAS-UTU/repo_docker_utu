@@ -5,7 +5,7 @@ Repositorio de Entornos para desarrollo en PHP y MySQL con Docker
 
 Construir y ejecutar : 
 
-# docker compose up -d
+# docker-compose up -d
 
 Si cambiamos algo en los DockerFile
 
